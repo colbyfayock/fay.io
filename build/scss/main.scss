@@ -1,0 +1,49 @@
+/*!
+Theme Name: WP-Init
+Theme URI: http://wordpress.com
+Description: Wordpress Init
+Author: Colby Fayock
+Author URI: http://colbyfayock.com
+Version: 1.0
+*/
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+
+@import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+@import '../../bower_components/normalize.css/normalize';
+
+$mobile: new-breakpoint(max-width 500px 4);
+
+@import 'settings/settings';
+@import 'util/util';
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: $color-grey1;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    padding: 1.5em 2em;
+    background-color: white;
+}
+
+.page-title {
+    margin: 0;
+}
+
+@import 'partials/partials';
+@import 'modules/modules';
+
+@import '../../bower_components/fontawesome/scss/font-awesome';
