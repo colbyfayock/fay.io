@@ -1,2 +1,49 @@
+#subfooter {
+
+    color: $color-grey4;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2.6em;
+
+    p {
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+    }
+
+}
+
 #footer {
+    margin-top: 2.8em;
+}
+
+.footer-social,
+.footer-copyright {
+
+    a {
+
+        color: $color-grey3;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+    }
+
+}
+
+.footer-copyright {
+
+    p {
+        height: 2em;
+        line-height: 2em;
+    }
+
+    a {
+        font-size: .8em;
+        text-decoration: none;
+    }
+
 }

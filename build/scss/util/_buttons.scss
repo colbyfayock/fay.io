@@ -111,6 +111,24 @@ $button-font-size: 1em;
         cursor: default !important;
     }
 
+    i {
+
+        margin-left: .3em;
+
+    }
+
+    &:hover {
+
+        [data-icon-hover] {
+
+            &:before {
+                content: attr(data-icon-hover);
+            }
+
+        }
+
+    }
+
 }
 
 
@@ -160,7 +178,7 @@ $button-font-size: 1em;
         }
 
         &:active {
-            color: darken($button-background, 5);
+            color: $button-color;
             background-color: desaturate($button-background, 5);
             border-color: desaturate($button-background, 5);
         }
@@ -228,10 +246,7 @@ $button-font-size: 1em;
     $button-size-multiplier: nth($button-size, 2);
 
     .button-#{$button-size-name} {
-        height: $button-height * $button-size-multiplier;
         font-size: $button-font-size * $button-size-multiplier;
-        line-height: $button-height * $button-size-multiplier;
-        padding: 0 ($button-height * $button-size-multiplier);
     }
 
 }

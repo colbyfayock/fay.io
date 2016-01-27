@@ -1,0 +1,41 @@
+.home {
+
+    .post {
+        margin-bottom: 2em;
+    }
+
+    .article-header {
+
+        h2 {
+            margin-bottom: $margin-bottom-h2 / 4;
+        }
+
+    }
+
+    .entry-content {
+
+        padding-left: 4em;
+
+        a {
+            display: block;
+            @include overrideLinkColor( $font-color-base );
+            text-decoration: none;
+        }
+
+        .tags {
+            color: $color-grey4;
+            font-size: 1em;
+        }
+
+
+        .button {
+
+            i {
+                width: 1em;
+            }
+
+        }
+
+    }
+
+}

@@ -6,7 +6,9 @@
 			"path": ".",
 			"folder_exclude_patterns": [
 				".*",
-				"wp"
+				"wp",
+                // "bower_components",
+                "node_modules"
 			],
 			"file_exclude_patterns": [
 				"._*",

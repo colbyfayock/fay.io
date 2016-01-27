@@ -1,17 +1,18 @@
-$color-red: red;
-$color-pink: pink;
-$color-magenta: magenta;
-$color-purple: purple;
-$color-indigo: indigo;
-$color-blue: blue;
-$color-cyan: cyan;
-$color-teal: teal;
-$color-green: green;
-$color-yellow: yellow;
-$color-amber: amber;
-$color-orange: orange;
-$color-brown: brown;
-$color-grey: grey;
+$color-red: #BC493A;
+$color-pink: #FFC6DD;
+$color-magenta: #CE65A0;
+$color-purple: #30284A;
+$color-violet: #9452B7;
+$color-indigo: #6F3D8A;
+$color-blue: #3E4270;
+$color-cyan: #2F96B5;
+$color-teal: #007079;
+$color-green: #40893F;
+$color-yellow: #FFCC4C;
+$color-amber: #E8AD3E;
+$color-orange: #D89D38;
+$color-brown: #7A4D2C;
+$color-grey: #747A80;
 
 $color-grey1: lighten($color-grey, 45);
 $color-grey2: lighten($color-grey, 30);
@@ -21,7 +22,7 @@ $color-grey5: darken($color-grey, 15);
 $color-grey6: darken($color-grey, 30);
 $color-grey7: darken($color-grey, 45);
 
-$color-primary: $color-red;
+$color-primary: $color-teal;
 $color-secondary: $color-blue;
 
 $color-alert: $color-orange;
@@ -44,6 +45,7 @@ $color-map:
     ( 'pink' $color-pink )
     ( 'magenta' $color-magenta )
     ( 'purple' $color-purple )
+    ( 'violet' $color-violet )
     ( 'indigo' $color-indigo )
     ( 'blue' $color-blue )
     ( 'cyan' $color-cyan )

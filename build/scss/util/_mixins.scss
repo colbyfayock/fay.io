@@ -20,3 +20,27 @@
     }
 
 }
+
+
+@mixin overrideLinkColor($color) {
+
+    color: $color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color;
+    }
+
+    &:visited {
+
+        color: $color;
+
+        &:hover,
+        &:active {
+            color: $color;
+        }
+
+    }
+
+}

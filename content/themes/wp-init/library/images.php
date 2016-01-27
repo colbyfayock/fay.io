@@ -19,14 +19,13 @@
 // duplicate one of the lines in the array and name it according to your
 // new image size.
 
-// function setCustomImageSizes( $sizes ) {
-//     return array_merge( $sizes, array(
-//         'zurg-thumb-600' => __('600px by 150px'),
-//         'zurg-thumb-300' => __('300px by 100px'),
-//     ) );
-// }
+function setCustomImageSizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'project-thumb' => __('800px by 600px'),
+    ) );
+}
 
-// add_filter( 'image_size_names_choose', 'setCustomImageSize' );
+add_filter( 'image_size_names_choose', 'setCustomImageSize' );
 
 
 // Remove the p from around imgs

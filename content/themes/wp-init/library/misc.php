@@ -6,10 +6,7 @@
 
 function cleanExcerptLinks($more) {
     global $post;
-    return '...  '
-        . '<a class="excerpt-read-more" href="' . get_permalink($post->ID) . '" title="Read' . get_the_title($post->ID) . '">'
-            . 'Read More'
-        . '</a>';
+    return '...';
 }
 
 

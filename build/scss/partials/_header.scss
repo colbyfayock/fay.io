@@ -1,2 +1,114 @@
-#header {
+#nav {
+
+    .row {
+
+        margin-bottom: 0;
+
+        .home & {
+            padding: 8em 0 5.5em;
+        }
+
+    }
+
+    .h1 {
+
+        margin: 0;
+
+        a {
+            font-weight: 700;
+        }
+
+        .home & {
+
+            text-align: center;
+
+            a {
+                font-size: 1.6em;
+            }
+
+        }
+
+        .single-post & {
+
+            font-size: 1em;
+
+        }
+
+    }
+
+    .tagline {
+        display: block;
+        color: $color-grey4;
+        font-weight: 400;
+        font-size: .5em;
+        line-height: 1.2em;
+        margin-top: .6em;
+    }
+
+    .nav-logo,
+    .nav-social {
+
+        .single-post & {
+
+            font-size: 1.4em;
+            @extend .sixcol;
+
+            a {
+
+                color: $color-grey4;
+
+                &:hover {
+                    color: $color-primary;
+                }
+
+            }
+
+        }
+
+    }
+
+    .nav-logo {
+
+        .single-post & {
+
+            a {
+                display: block;
+                height: 2em;
+                line-height: 2em;
+            }
+
+        }
+
+    }
+
+    .nav-social {
+
+        .home & {
+
+            display: flex;
+            font-size: 1.6em;
+            flex-flow: wrap;
+            justify-content: center;
+            margin-top: .3em;
+
+            a {
+
+                color: $color-grey5;
+
+                &:hover {
+                    color: $color-primary;
+                }
+
+            }
+
+        }
+
+        .single-post & {
+
+            text-align: right;
+
+        }
+
+    }
+
 }

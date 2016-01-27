@@ -40,3 +40,15 @@ function launchTheme() {
 }
 
 add_action( 'after_setup_theme', 'launchTheme', 16 );
+
+function getFileData( $filename = false, $dataType = 'json' ) {
+
+    if ( !$filename ) return false;
+
+    $data = file_get_contents( 'data/' . $filename );
+
+    if ( $dataType === 'json' ) $data = json_decode($data);
+
+    return $data;
+
+}

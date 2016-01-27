@@ -1,22 +1,25 @@
 /*!
-Theme Name: WP-Init
-Theme URI: http://wordpress.com
-Description: Wordpress Init
+Theme Name: Fay.io
+Theme URI: http://fay.io
+Description: Portfolio
 Author: Colby Fayock
 Author URI: http://colbyfayock.com
 Version: 1.0
 */
 
-$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts";
 
 @import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 @import '../../bower_components/normalize.css/normalize';
 
-$mobile: new-breakpoint(max-width 500px 4);
+$mobile: new-breakpoint(max-width 600px 4);
+$desktop: new-breakpoint(min-width 600px 12);
 
 @import 'settings/settings';
 @import 'util/util';
+
+@import '../../bower_components/font-awesome/scss/font-awesome';
 
 * {
     -moz-box-sizing: border-box;
@@ -24,8 +27,8 @@ $mobile: new-breakpoint(max-width 500px 4);
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    background-color: $color-grey1;
+    color: $font-color-base;
+    font-family: $font-family-base;
     margin: 0;
 }
 
@@ -35,15 +38,20 @@ img {
 }
 
 .row {
-    padding: 1.5em 2em;
+
+    padding: 1.5em 0;
     background-color: white;
+
+    @include media($mobile) {
+        padding: 1em;
+    }
+
 }
 
 .page-title {
     margin: 0;
 }
 
+@import 'pages/pages';
 @import 'partials/partials';
 @import 'modules/modules';
-
-@import '../../bower_components/fontawesome/scss/font-awesome';

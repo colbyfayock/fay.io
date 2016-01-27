@@ -126,9 +126,7 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.registerTask('default', [
-        'rsync'
-    ]);
+    grunt.registerTask('default', []);
 
     grunt.registerTask('css', [
         'sass'
