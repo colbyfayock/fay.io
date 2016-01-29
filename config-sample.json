@@ -1,0 +1,9 @@
+{
+    "rsync": {
+        "deploy": {
+            "src": "./content/themes/wp-init",
+            "dest": "~/website.com/",
+            "host": "username@website.com"
+        }
+    }
+}

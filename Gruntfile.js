@@ -5,6 +5,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
+        env: grunt.file.readJSON('config.json'),
 
         concat: {
 
@@ -94,16 +95,9 @@ module.exports = function(grunt) {
             },
             deploy: {
                 options: {
-                    src: "./content/themes/wp-init",
-                    dest: "~/fay.io/content/themes/",
-                    host: "colbz@ra.dreamhost.com",
-                    delete: false
-                }
-            },
-            pull: {
-                options: {
-                    src: "username@website.com:~/website.com/",
-                    dest: ".",
+                    src: '<%= env.rsync.deploy.src %>',
+                    dest: '<%= env.rsync.deploy.dest %>',
+                    host: '<%= env.rsync.deploy.host %>',
                     delete: false
                 }
             }

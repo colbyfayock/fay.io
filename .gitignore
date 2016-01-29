@@ -8,6 +8,7 @@ node_modules
 
 # Ignore config
 local-config.php
+config.json
 
 # Operating system files
 .Spotlight-V100
