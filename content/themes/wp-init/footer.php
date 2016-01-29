@@ -3,7 +3,9 @@
     <div class="content">
 
         <div class="row">
-            Looking to refresh your web presence? <a href="mailto:hello@fay.io">Contact me now</a> for availability and pricing.
+            <p>
+                Looking to refresh your web presence? <a href="mailto:hello@fay.io">Contact me now</a> for availability and pricing.
+            </p>
         </div>
 
     </div>
@@ -20,25 +22,25 @@
             <div class="sixcol footer-social">
                 <ul class="social-icons">
                     <li class="footer-social-twitter">
-                        <a href="http://twitter.com/colbyfayock">
+                        <a href="http://twitter.com/colbyfayock" target="_blank">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                             <span class="ir">Twitter</span>
                         </a>
                     </li>
                     <li class="footer-social-dribbble">
-                        <a href="http://dribbble.com/colbyfayock">
+                        <a href="http://dribbble.com/colbyfayock" target="_blank">
                             <i class="fa fa-dribbble" aria-hidden="true"></i>
                             <span class="ir">Dribbble</span>
                         </a>
                     </li>
                     <li class="footer-social-github">
-                        <a href="http://github.com/colbyfayock">
+                        <a href="http://github.com/colbyfayock" target="_blank">
                             <i class="fa fa-github" aria-hidden="true"></i>
                             <span class="ir">GitHub</span>
                         </a>
                     </li>
                     <li class="footer-social-codepen">
-                        <a href="http://codepen.io/colbyfayock">
+                        <a href="http://codepen.io/colbyfayock" target="_blank">
                             <i class="fa fa-codepen" aria-hidden="true"></i>
                             <span class="ir">CodePen</span>
                         </a>

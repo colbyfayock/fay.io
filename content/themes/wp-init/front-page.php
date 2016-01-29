@@ -12,7 +12,7 @@
                 </a>
 
             </div>
-            <div class="sixcol vertical-middle">
+            <div class="sixcol entry-content-wrapper">
 
                 <div class="entry-content">
 

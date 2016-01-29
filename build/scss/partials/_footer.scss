@@ -5,10 +5,24 @@
     text-align: center;
     margin-top: 2.6em;
 
+    @include media( $mobile ) {
+        font-size: .9em;
+        margin-top: .2em;
+    }
+
     p {
 
         &:first-child {
             margin-top: 0;
+        }
+
+        @include media($mobile) {
+
+            a:before {
+                content: '\a';
+                white-space: pre;
+            }
+
         }
 
     }
@@ -16,7 +30,17 @@
 }
 
 #footer {
-    margin-top: 2.8em;
+
+    text-align: center;
+
+    @include media( $desktop ) {
+        margin-top: 2.8em;
+    }
+
+    .align-right {
+        text-align: center;
+    }
+
 }
 
 .footer-social,

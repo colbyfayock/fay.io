@@ -23,25 +23,25 @@
             </div>
             <ul class="nav-social social-icons">
                 <li class="nav-social-twitter">
-                    <a href="http://twitter.com/colbyfayock">
+                    <a href="http://twitter.com/colbyfayock" target="_blank">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                         <span class="ir">Twitter</span>
                     </a>
                 </li>
                 <li class="nav-social-dribbble">
-                    <a href="http://dribbble.com/colbyfayock">
+                    <a href="http://dribbble.com/colbyfayock" target="_blank">
                         <i class="fa fa-dribbble" aria-hidden="true"></i>
                         <span class="ir">Dribbble</span>
                     </a>
                 </li>
                 <li class="nav-social-github">
-                    <a href="http://github.com/colbyfayock">
+                    <a href="http://github.com/colbyfayock" target="_blank">
                         <i class="fa fa-github" aria-hidden="true"></i>
                         <span class="ir">GitHub</span>
                     </a>
                 </li>
                 <li class="nav-social-codepen">
-                    <a href="http://codepen.io/colbyfayock">
+                    <a href="http://codepen.io/colbyfayock" target="_blank">
                         <i class="fa fa-codepen" aria-hidden="true"></i>
                         <span class="ir">CodePen</span>
                     </a>

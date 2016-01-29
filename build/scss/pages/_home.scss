@@ -12,9 +12,27 @@
 
     }
 
+    .entry-content-wrapper {
+
+        @include media( $desktop ) {
+            @include display(flex);
+            @include align-items(center);
+        }
+
+    }
+
     .entry-content {
 
-        padding-left: 4em;
+        margin-top: 1em;
+
+        @include media( $desktop ) {
+            padding-left: 4em;
+        }
+
+        @include media( $mobile ) {
+            font-size: .8em;
+            text-align: center;
+        }
 
         a {
             display: block;
@@ -32,6 +50,12 @@
 
             i {
                 width: 1em;
+            }
+
+            @include media( $mobile ) {
+
+                width: 100%;
+
             }
 
         }

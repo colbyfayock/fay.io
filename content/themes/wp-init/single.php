@@ -27,7 +27,7 @@
                     <? foreach( $projectData as $project ) : ?>
                         <li class="fourcol">
                             <img src="<?= $project->images->normal ?>" alt="<?= $project->images->title ?>" >
-                            <a href="<?= $project->html_url ?>">
+                            <a href="<?= $project->html_url ?>" target="_blank">
                                 <i class="fa fa-dribbble"></i>
                                 View on dribbble.com
                             </a>
@@ -49,7 +49,7 @@
                     <? endif; ?>
                     <? if ( $clientWebsite = get_post_meta( $post->ID, 'client-website', true ) ) : ?>
                         <li>
-                            <a href="<?= $clientWebsite ?>">
+                            <a href="<?= $clientWebsite ?>" target="_blank">
                                 <?= $clientWebsite ?>
                             </a>
                         </li>

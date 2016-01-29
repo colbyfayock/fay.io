@@ -134,6 +134,24 @@
     float: none;
 }
 
+@include media($mobile) {
+
+    .onecol,
+    .twocol,
+    .threecol,
+    .fourcol,
+    .fivecol,
+    .sixcol,
+    .sevencol,
+    .eightcol,
+    .ninecol,
+    .tencol,
+    .elevencol {
+        margin-right: 0;
+    }
+
+}
+
 .shiftone {
     @include shift(1);
 }

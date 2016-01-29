@@ -94,9 +94,9 @@ module.exports = function(grunt) {
             },
             deploy: {
                 options: {
-                    src: ".",
-                    dest: "~/website.com",
-                    host: "username@website.com",
+                    src: "./content/themes/wp-init",
+                    dest: "~/fay.io/content/themes/",
+                    host: "colbz@ra.dreamhost.com",
                     delete: false
                 }
             },
