@@ -1,5 +1,6 @@
 .container {
-    @include outer-container(960px);
+    @include outer-container(60em);
+    padding: 0 1em;
 }
 
 .row {

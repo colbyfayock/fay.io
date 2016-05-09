@@ -56,7 +56,16 @@
 
             @include media($mobile) {
 
-                width: 100%;
+                width: 50%;
+                margin: 0;
+
+                &:nth-child( 2n ) {
+                    padding: .4em 0 .4em .4em;
+                }
+
+                &:nth-child( 2n+1 ) {
+                    padding: .4em .4em .4em 0;
+                }
 
             }
 

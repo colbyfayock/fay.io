@@ -29,6 +29,10 @@
             padding-left: 4em;
         }
 
+        @include media( $tablet ) {
+            padding-left: 0;
+        }
+
         @include media( $mobile ) {
             font-size: .8em;
             text-align: center;

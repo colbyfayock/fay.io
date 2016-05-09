@@ -655,9 +655,10 @@ blockquote {
     margin-top: 0; }
 
 .container {
-  max-width: 960px;
+  max-width: 60em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 1em; }
   .container::after {
     clear: both;
     content: "";
@@ -671,7 +672,7 @@ blockquote {
     content: "";
     display: table; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .row-flex {
     display: flex;
     display: -webkit-flex;
@@ -688,7 +689,7 @@ blockquote {
   width: 6.1721527019%; }
   .onecol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .onecol {
       float: left;
       display: block;
@@ -704,7 +705,7 @@ blockquote {
   width: 14.7019570017%; }
   .twocol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .twocol {
       float: left;
       display: block;
@@ -720,7 +721,7 @@ blockquote {
   width: 23.2317613015%; }
   .threecol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .threecol {
       float: left;
       display: block;
@@ -736,7 +737,7 @@ blockquote {
   width: 31.7615656014%; }
   .fourcol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .fourcol {
       float: left;
       display: block;
@@ -752,7 +753,7 @@ blockquote {
   width: 40.2913699012%; }
   .fivecol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .fivecol {
       float: left;
       display: block;
@@ -770,7 +771,7 @@ blockquote {
   .sixcol:last-child, .single-post #nav .nav-logo:last-child, .single-post
   #nav .nav-social:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .sixcol, .single-post #nav .nav-logo, .single-post
     #nav .nav-social {
       float: left;
@@ -788,7 +789,7 @@ blockquote {
   width: 57.3509785009%; }
   .sevencol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .sevencol {
       float: left;
       display: block;
@@ -804,7 +805,7 @@ blockquote {
   width: 65.8807828007%; }
   .eightcol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .eightcol {
       float: left;
       display: block;
@@ -820,7 +821,7 @@ blockquote {
   width: 74.4105871005%; }
   .ninecol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .ninecol {
       float: left;
       display: block;
@@ -836,7 +837,7 @@ blockquote {
   width: 82.9403914003%; }
   .tencol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .tencol {
       float: left;
       display: block;
@@ -852,7 +853,7 @@ blockquote {
   width: 91.4701957002%; }
   .elevencol:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .elevencol {
       float: left;
       display: block;
@@ -870,7 +871,7 @@ blockquote {
   .twelvecol:last-child {
     margin-right: 0; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .onecol,
   .twocol,
   .threecol,
@@ -3621,7 +3622,7 @@ img {
 .row {
   padding: 1.5em 0;
   background-color: white; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .row {
       padding: 1em; } }
 
@@ -3634,7 +3635,7 @@ img {
 .home .article-header h2 {
   margin-bottom: 0.3035750002em; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .home .entry-content-wrapper {
     display: -webkit-box;
     display: -moz-box;
@@ -3655,10 +3656,13 @@ img {
 
 .home .entry-content {
   margin-top: 1em; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 37.5em) {
     .home .entry-content {
       padding-left: 4em; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 60em) {
+    .home .entry-content {
+      padding-left: 0; } }
+  @media screen and (max-width: 37.5em) {
     .home .entry-content {
       font-size: .8em;
       text-align: center; } }
@@ -3680,7 +3684,7 @@ img {
   input[type="reset"] i, .home .entry-content
   button i {
     width: 1em; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .home .entry-content .button, .home .entry-content input[type="submit"], .home .entry-content
     input[type="button"], .home .entry-content
     input[type="reset"], .home .entry-content
@@ -3689,7 +3693,7 @@ img {
 
 .single-post .article-header {
   padding: 3em 0 4em; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .single-post .article-header {
       padding: 0 0 4em; } }
 
@@ -3697,7 +3701,7 @@ img {
   font-size: 4.08em;
   text-align: center;
   margin-bottom: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .single-post h1 {
       font-size: 3em; } }
 
@@ -3721,12 +3725,17 @@ img {
   .single-post .project-images li {
     position: relative;
     margin-bottom: 2.3576515979%; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 37.5em) {
       .single-post .project-images li:nth-child(3n) {
         margin-right: 0; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 37.5em) {
       .single-post .project-images li {
-        width: 100%; } }
+        width: 50%;
+        margin: 0; }
+        .single-post .project-images li:nth-child(2n) {
+          padding: .4em 0 .4em .4em; }
+        .single-post .project-images li:nth-child(2n+1) {
+          padding: .4em .4em .4em 0; } }
     .single-post .project-images li:hover a {
       display: block; }
   .single-post .project-images img {
@@ -3769,7 +3778,7 @@ img {
   margin-bottom: 0; }
   .home #nav .row {
     padding: 8em 0 5.5em; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 37.5em) {
       .home #nav .row {
         padding: 4em 1em 2em; } }
 
@@ -3781,7 +3790,7 @@ img {
     text-align: center; }
     .home #nav .h1 a {
       font-size: 1.6em; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 37.5em) {
       .home #nav .h1 {
         font-size: 1.8em; } }
   .single-post #nav .h1 {
@@ -3805,7 +3814,7 @@ img {
     #nav .nav-social a:hover {
       color: #007079; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   #nav .nav-logo,
   #nav .nav-social {
     text-align: center; } }
@@ -3826,7 +3835,7 @@ img {
     .home #nav .nav-social a:hover {
       color: #007079; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .single-post #nav .nav-social {
     text-align: right; } }
 
@@ -3835,20 +3844,20 @@ img {
   font-size: 1em;
   text-align: center;
   margin-top: 2.6em; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     #subfooter {
       font-size: .9em;
       margin-top: .2em; } }
   #subfooter p:first-child {
     margin-top: 0; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     #subfooter p a:before {
       content: '\a';
       white-space: pre; } }
 
 #footer {
   text-align: center; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 37.5em) {
     #footer {
       margin-top: 2.8em; } }
   #footer .align-right {

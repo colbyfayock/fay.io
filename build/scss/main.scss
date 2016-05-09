@@ -13,8 +13,9 @@ $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts";
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 @import '../../bower_components/normalize.css/normalize';
 
-$mobile: new-breakpoint(max-width 600px 4);
-$desktop: new-breakpoint(min-width 600px 12);
+$mobile: new-breakpoint(max-width 37.5em 4);
+$desktop: new-breakpoint(min-width 37.5em 12);
+$tablet: new-breakpoint(max-width 60em 12);
 
 @import 'settings/settings';
 @import 'util/util';
