@@ -22,7 +22,22 @@
 
             </header>
 
-            <section class="entry-content cf" itemprop="articleBody">
+            <section class="entry-content row cf" itemprop="articleBody">
+
+                <? if ( $projectBanner = get_post_meta( $post->ID, 'project-banner', true ) ) : ?>
+                    <div class="project-banner">
+                        <img src="<?= $projectBanner ?>">
+                    </div>
+                <? endif; ?>
+
+                <div class="project-details">
+                    <? the_content(); ?>
+                </div>
+
+            </section>
+
+            <section class="entry-content row cf">
+
                 <ul class="project-images cf">
                     <? foreach( $projectData as $project ) : ?>
                         <li class="fourcol">
@@ -34,9 +49,6 @@
                         </li>
                     <? endforeach; ?>
                 </ul>
-                <div class="project-details">
-                    <? the_content(); ?>
-                </div>
             </section>
 
             <footer class="article-footer">

@@ -21,6 +21,10 @@
 
     }
 
+    .project-banner {
+        margin: 0 -2em;
+    }
+
     .tags {
         display: block;
         color: $color-grey4;
@@ -106,7 +110,6 @@
         color: $color-grey4;
         font-size: .75em;
         list-style: none;
-        margin-top: 5em;
 
         h4 {
             font-weight: 600;

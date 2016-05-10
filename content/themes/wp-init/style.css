@@ -658,11 +658,14 @@ blockquote {
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1em; }
+  padding: 0 2em; }
   .container::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 37.5em) {
+    .container {
+      padding: 0; } }
 
 .row {
   display: block;
@@ -3705,6 +3708,9 @@ img {
     .single-post h1 {
       font-size: 3em; } }
 
+.single-post .project-banner {
+  margin: 0 -2em; }
+
 .single-post .tags {
   display: block;
   color: #747A80;
@@ -3763,8 +3769,7 @@ img {
 .single-post .article-footer {
   color: #747A80;
   font-size: .75em;
-  list-style: none;
-  margin-top: 5em; }
+  list-style: none; }
   .single-post .article-footer h4 {
     font-weight: 600;
     margin: 0 0 1em; }
