@@ -2,7 +2,6 @@
     <? if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <? $projectId = get_post_meta( $post->ID, 'project-id', true ) ?>
-        <? if ( !empty( $projectId ) ) $projectData = getFileData('project_' . $projectId . '.json') ?>
 
         <article id="post-<? the_ID(); ?>" <? post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -39,15 +38,24 @@
             <section class="entry-content row cf">
 
                 <ul class="project-images cf">
-                    <? foreach( $projectData as $project ) : ?>
-                        <li class="fourcol">
-                            <img src="<?= $project->images->normal ?>" alt="<?= $project->images->title ?>" >
-                            <a href="<?= $project->html_url ?>" target="_blank">
-                                <i class="fa fa-dribbble"></i>
-                                View on dribbble.com
-                            </a>
-                        </li>
-                    <? endforeach; ?>
+                    <? if ( !empty( $projectId ) && $projectData = getFileData('project_' . $projectId . '.json') ) : ?>
+                        <? foreach( $projectData as $project ) : ?>
+                            <li class="fourcol">
+                                <img src="<?= $project->images->normal ?>" data-hippi="<?= $project->images->hidpi ?>" alt="<?= $project->images->title ?>" >
+                                <a href="<?= $project->html_url ?>" target="_blank">
+                                    <i class="fa fa-dribbble"></i>
+                                    View on dribbble.com
+                                </a>
+                            </li>
+                        <? endforeach; ?>
+                    <? endif; ?>
+                    <? if ( $projectImages = json_decode( get_post_meta( $post->ID, 'project-images', true ), true ) ) : ?>
+                        <? foreach ($projectImages as $image) : ?>
+                            <li class="fourcol">
+                                <img src="<?= $image['1x'] ?>" data-hippi="<?= $image['2x'] ?>" alt="<?= $image['alt'] ?>" >
+                            </li>
+                        <? endforeach; ?>
+                    <? endif; ?>
                 </ul>
             </section>
 
