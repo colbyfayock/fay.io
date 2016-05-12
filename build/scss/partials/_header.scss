@@ -38,7 +38,8 @@
 
         }
 
-        .single-post & {
+        .single-post &,
+        .error404 & {
 
             font-size: 1em;
 
@@ -58,7 +59,8 @@
     .nav-logo,
     .nav-social {
 
-        .single-post & {
+        .single-post &,
+        .error404 & {
 
             font-size: 1.4em;
             @extend .sixcol;
@@ -83,7 +85,8 @@
 
     .nav-logo {
 
-        .single-post & {
+        .single-post &,
+        .error404 & {
 
             a {
                 display: block;
@@ -117,7 +120,8 @@
 
         }
 
-        .single-post & {
+        .single-post &,
+        .error404 & {
 
             @include media($desktop) {
                 text-align: right;

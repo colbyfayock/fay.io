@@ -1,25 +1,26 @@
 .align-left {
-    text-align: left;
+    text-align: left!important;
 }
 
 .align-right {
-    text-align: right;
+    text-align: right!important;
 }
 
 .align-center {
-    text-align: center;
+    text-align: center!important;
 }
 
 .float-left {
-    float: left;
+    float: left!important;
 }
 
 .float-right {
-    float: right;
+    float: right!important;
 }
 
 .center {
-    margin: 0 auto;
+    margin: 0 auto !important;
+    float: none!important;
 }
 
 .vertical-middle {
@@ -58,6 +59,27 @@
 
 .flat-all {
     margin: 0!important;
+}
+
+
+.push-top {
+    margin-top: .5em!important;
+}
+
+.push-right {
+    margin-right: .5em!important;
+}
+
+.push-bottom {
+    margin-bottom: .5em!important;
+}
+
+.push-bottom {
+    margin-bottom: .5em!important;
+}
+
+.push-all {
+    margin: .5em!important;
 }
 
 
