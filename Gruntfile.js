@@ -19,11 +19,12 @@ module.exports = function(grunt) {
                     // Bower components
 
                     './bower_components/modernizr/modernizr.js',
+                    './bower_components/magnific-popup/dist/jquery.magnific-popup.js',
 
 
                     // Local components
 
-                    // './local_components/dir/dir.js',
+                    './local_components/hippify/src/hippify.js',
 
 
                     // Main

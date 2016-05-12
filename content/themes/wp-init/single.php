@@ -25,7 +25,7 @@
 
                 <? if ( $projectBanner = get_post_meta( $post->ID, 'project-banner', true ) ) : ?>
                     <div class="project-banner">
-                        <img src="<?= $projectBanner ?>">
+                        <img class="hippify" src="<?= $projectBanner ?>" data-hippi-src="<?= str_replace('.jpg', '@2x.jpg', $projectBanner) ?>">
                     </div>
                 <? endif; ?>
 
@@ -41,8 +41,10 @@
                     <? if ( !empty( $projectId ) && $projectData = getFileData('project_' . $projectId . '.json') ) : ?>
                         <? foreach( $projectData as $project ) : ?>
                             <li class="fourcol">
-                                <img src="<?= $project->images->normal ?>" data-hippi="<?= $project->images->hidpi ?>" alt="<?= $project->images->title ?>" >
-                                <a href="<?= $project->html_url ?>" target="_blank">
+                                <a class="project-images-thumb" href="<?= $project->images->hidpi ?>" title="<?= $project->title ?>">
+                                    <img class="hippify" src="<?= $project->images->normal ?>" data-hippi-src="<?= $project->images->hidpi ?>" alt="<?= $project->title ?>" >
+                                </a>
+                                <a class="project-images-view" href="<?= $project->html_url ?>" target="_blank">
                                     <i class="fa fa-dribbble"></i>
                                     View on dribbble.com
                                 </a>
@@ -52,7 +54,9 @@
                     <? if ( $projectImages = json_decode( get_post_meta( $post->ID, 'project-images', true ), true ) ) : ?>
                         <? foreach ($projectImages as $image) : ?>
                             <li class="fourcol">
-                                <img src="<?= $image['1x'] ?>" data-hippi="<?= $image['2x'] ?>" alt="<?= $image['alt'] ?>" >
+                                <a class="project-images-thumb" href="<?= $image['2x'] ?>" title="<?= $image['alt'] ?>">
+                                    <img class="hippify" src="<?= $image['1x'] ?>" data-hippi-src="<?= $image['2x'] ?>" alt="<?= $image['alt'] ?>" >
+                                </a>
                             </li>
                         <? endforeach; ?>
                     <? endif; ?>

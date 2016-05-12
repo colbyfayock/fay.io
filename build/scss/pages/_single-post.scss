@@ -75,7 +75,7 @@
 
             &:hover {
 
-                a {
+                .project-images-view {
                     display: block;
                 }
 
@@ -88,6 +88,14 @@
         }
 
         a {
+            outline: none;
+        }
+
+        .project-images-thumb {
+            cursor: zoom-in;
+        }
+
+        .project-images-view {
             display: none;
             position: absolute;
             top: 100%;

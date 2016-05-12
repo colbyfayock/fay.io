@@ -56,3 +56,26 @@ img {
 @import 'pages/pages';
 @import 'partials/partials';
 @import 'modules/modules';
+
+@import '../../bower_components/magnific-popup/dist/magnific-popup';
+
+.mfp-bg {
+    background-color: $color-grey4;
+}
+
+.mfp-figure {
+
+    &:after {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+}
+
+.mfp-arrow {
+
+    &:before {
+        border-left: 0;
+        border-right: 0;
+    }
+
+}
