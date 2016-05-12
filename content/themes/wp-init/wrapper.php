@@ -5,9 +5,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title><?= wp_title('', false) ? wp_title('', false) . ' - ' : '' ?><? bloginfo('name'); ?></title>
-
-        <meta name="description" content="">
+        <title><?= wp_title('', false) ? wp_title('', false) : bloginfo('name') ?></title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
