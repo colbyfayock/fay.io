@@ -9,13 +9,13 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <!--<link rel="apple-touch-icon" href="<?= get_template_directory_uri() ?>/library/images/apple-icon-touch.png">-->
-        <!--<link rel="icon" href="<?= get_template_directory_uri() ?>/favicon.png">-->
+        <link rel="apple-touch-icon" href="<?= get_template_directory_uri() ?>/library/images/apple-icon-touch.png">
+        <link rel="icon" href="<?= get_template_directory_uri() ?>/favicon.png">
         <!--[if IE]>
             <link rel="shortcut icon" href="<?= get_template_directory_uri() ?>/favicon.ico">
         <![endif]-->
-        <!--<meta name="msapplication-TileColor" content="#f01d4f">-->
-        <!--<meta name="msapplication-TileImage" content="<?= get_template_directory_uri() ?>/library/images/win8-tile-icon.png">-->
+        <meta name="msapplication-TileColor" content="#f01d4f">
+        <meta name="msapplication-TileImage" content="<?= get_template_directory_uri() ?>/library/images/win8-tile-icon.png">
 
         <link rel="pingback" href="<? bloginfo('pingback_url'); ?>">
 
